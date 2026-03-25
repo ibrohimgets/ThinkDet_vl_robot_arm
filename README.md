@@ -87,10 +87,8 @@ Send a query:
 ros2 topic pub --once /thinkdet/query std_msgs/msg/String "{data: 'tool to drink coffee from'}"
 ```
 
-## Resume-Safe Framing
+## Project Summary
 
-A defensible description is:
-
-> Built a ROS2 RGB-D perception node that connects a research open-vocabulary detector (ThinkDet) and a GroundingDINO baseline to real/sim camera streams, ranks language-conditioned detections, back-projects the top target into 3D, and publishes robot-consumable grasp targets and debug visualizations.
-
-That claim is honest because the node now has a concrete runtime path, package metadata, launch flow, and a fallback backend for demos.
+This package connects a language-conditioned open-vocabulary detector to ROS2
+RGB-D camera streams and publishes a ranked detection set, a 3D target point,
+and a debug visualization for robot or simulator demos.
